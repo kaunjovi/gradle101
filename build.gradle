@@ -1,0 +1,6 @@
+/* 
+* A task is an object 
+* A gradle build is a program
+*/ 
+
+task helloWorld
