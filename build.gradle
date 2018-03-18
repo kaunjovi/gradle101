@@ -1,13 +1,13 @@
-/* 
-* A task is an object 
-* A gradle build is a program
+/*
+Compile the java code. 
+Run tests 
+Format test results 
+Build a jar 
 */ 
 
-task helloWorld
+apply plugin : "java"
 
-helloWorld {
-
-    doLast {
-        println "hello world"
-    }
+task runMyJavaCode (type: JavaExec){
+    main = 'fun.n.games.HelloWorld'
+    classpath = sourceSets.main.runtimeClasspath
 }
